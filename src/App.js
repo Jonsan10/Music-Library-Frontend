@@ -1,4 +1,5 @@
-
+import NavBar from './Components/NavBar/Navbar.';
+import SearchBar from './Components/SearchBar/SearchBar';
 import DisplayMusic from './Components/DisplayMusic/DisplayMusic';
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
@@ -19,6 +20,8 @@ function App() {
 
   return (
     <div className='webpage'>
+      <NavBar/>
+      <SearchBar findSong={setSongs} />
       <DisplayMusic displaySong={songs} />
     </div>
   );
