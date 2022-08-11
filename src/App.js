@@ -1,5 +1,8 @@
+
+import DisplayMusic from './Components/DisplayMusic/DisplayMusic';
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+
 
 function App() {
 
@@ -15,8 +18,8 @@ function App() {
   }
 
   return (
-    <div>
-      <h3> Hello WOrld</h3>
+    <div className='webpage'>
+      <DisplayMusic displaySong={songs} />
     </div>
   );
 }
